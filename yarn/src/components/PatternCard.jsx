@@ -1,11 +1,11 @@
 import { Button, Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
-function PatternCard({title, type, difficulty, sewing, length, yarn, size, image}) {
+function PatternCard({id, title, type, difficulty, sewing, length, yarn, size, image}) {
     const navigate = useNavigate();
 
     const handleButtonClick = () => {
-        navigate('/');
+        navigate(`/pattern/${id}`);
     };
 
     return (

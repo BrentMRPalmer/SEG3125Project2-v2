@@ -12,6 +12,7 @@ const Patterns = ({ patternData }) => {
             {patternData.map((pattern, index) => (
                 <PatternCard 
                     key={index}
+                    id={pattern.id}
                     title={pattern.title}
                     type={pattern.type}
                     difficulty={pattern.difficulty}
