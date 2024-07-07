@@ -19,6 +19,27 @@
     row-gap: 2em;
 }
 
+.margin-b {
+    margin-bottom: 1em;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+
+.filter-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .custom-body-font {
     font-size: 1.5em;
     color: #764687;
