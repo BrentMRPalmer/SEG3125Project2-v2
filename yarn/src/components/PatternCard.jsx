@@ -1,10 +1,10 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-function PatternCard({title, type, difficulty, sewing, length, yarn, size}) {
+function PatternCard({title, type, difficulty, sewing, length, yarn, size, image}) {
   return (
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="/images/penguin.png" />
+      <Card.Img variant="top" src={image} />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>

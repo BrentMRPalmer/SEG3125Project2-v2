@@ -2,53 +2,26 @@ import React from 'react'
 import PatternCard from '../components/PatternCard';
 import '../styles.css';
 
-const Patterns = () => {
+const Patterns = ({ patternData }) => {
   return (
     <div className="wrapper">
         <div>
             <h1 class="centered-text"><b>Our Patterns</b></h1>
         </div>
         <div className="patterns-container">
-            <PatternCard 
-            title="Peter the Penguin"
-            type="Animal"
-            difficulty="Easy"
-            sewing="Low"
-            length="1 hour"
-            yarn="Jumbo (7)"
-            size="small"/>
-            <PatternCard 
-            title="Peter the Penguin"
-            type="Animal"
-            difficulty="Easy"
-            sewing="Low"
-            length="1 hour"
-            yarn="Jumbo (7)"
-            size="small"/>
-            <PatternCard 
-            title="Peter the Penguin"
-            type="Animal"
-            difficulty="Easy"
-            sewing="Low"
-            length="1 hour"
-            yarn="Jumbo (7)"
-            size="small"/>
-            <PatternCard 
-            title="Peter the Penguin"
-            type="Animal"
-            difficulty="Easy"
-            sewing="Low"
-            length="1 hour"
-            yarn="Jumbo (7)"
-            size="small"/>
-            <PatternCard 
-            title="Peter the Penguin"
-            type="Animal"
-            difficulty="Easy"
-            sewing="Low"
-            length="1 hour"
-            yarn="Jumbo (7)"
-            size="small"/>
+            {patternData.map((pattern, index) => (
+                <PatternCard 
+                    key={index}
+                    title={pattern.title}
+                    type={pattern.type}
+                    difficulty={pattern.difficulty}
+                    sewing={pattern.sewing}
+                    length={pattern.length}
+                    yarn={pattern.yarn}
+                    size={pattern.size}
+                    image={pattern.image}
+                />
+            ))}
         </div>
     </div>
   );
