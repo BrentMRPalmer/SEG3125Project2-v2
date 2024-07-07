@@ -13,6 +13,12 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.video-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2em;
+}
+
 .custom-body-font {
     font-size: 1.5em;
     color: #764687;
@@ -23,11 +29,15 @@
     padding: 1em;
 }
 
+.extra-padding {
+    padding: 3em;
+}
+
 .wrapper {
     margin: 4em 20em;
 }
 
-h1 {
+h1, h2, h4, h6 {
     font-family: "Baloo 2";
     color: #764687;
 }
