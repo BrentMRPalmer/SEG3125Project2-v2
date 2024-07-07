@@ -1,6 +1,6 @@
-import React from 'react'
+import {React, useState} from 'react'
 import { useParams, useNavigate } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 import '../styles.css';
 
 const Pattern = ({ patternData }) => {
@@ -9,8 +9,19 @@ const Pattern = ({ patternData }) => {
         navigate(`/patterns`);
     };
 
+    const handleCommentSubmit = (e) => {
+        e.preventDefault();
+        if (newComment.trim()) {
+            setComments([...comments, newComment]);
+            setNewComment(``);
+        }
+    }
+
     const { id } = useParams();
     const pattern = patternData.find((p) => p.id === parseInt(id));
+
+    const [comments, setComments] = useState(["I love this!!", "This was so much fun!"]);
+    const [newComment, setNewComment] = useState('');
 
     return (
         <div className="wrapper">
@@ -52,6 +63,26 @@ const Pattern = ({ patternData }) => {
                     <p key={index} dangerouslySetInnerHTML={{ __html: instruction }}></p>
                 ))}
             </div>
+
+            <div>
+                <h1 className="centered-text"><b>Comments</b></h1>
+                <ul className="custom-body-font">
+                    {comments.map( (comment, index) => (
+                        <li key={index}>{comment}</li>
+                    ))}
+                </ul>
+            </div>
+
+            <Form onSubmit={handleCommentSubmit}>
+                <Form.Group className="mb-3" controlId="formBasicComment">
+                    <Form.Label className="custom-body-font">Add a comment</Form.Label>
+                    <Form.Control type="text" value={newComment} onChange={(e) => setNewComment(e.target.value)}/>
+                </Form.Group>
+
+                <Button variant="primary" type="submit">
+                    Comment
+                </Button>
+            </Form>
             
     </div>
     );
