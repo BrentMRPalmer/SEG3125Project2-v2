@@ -5,12 +5,31 @@
     padding: 2em;
 }
 
+.characteristics-container {
+    font-size: 1.5em;
+    color: #764687;
+    font-family: "Baloo 2";
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.custom-body-font {
+    font-size: 1.5em;
+    color: #764687;
+    font-family: "Baloo 2";
+}
+
+.padding {
+    padding: 1em;
+}
+
 .wrapper {
     margin: 4em 20em;
 }
 
 h1 {
     font-family: "Baloo 2";
+    color: #764687;
 }
 
 .centered-text {
@@ -19,3 +38,19 @@ h1 {
     align-items: center;
     text-align: center;
 }
+
+.image-container {
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.rounded-image {
+    border-radius: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
