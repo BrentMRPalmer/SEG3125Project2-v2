@@ -37,9 +37,9 @@ const Home = () => {
           <div class="grid-item">Watch videos that we recommend to learn everything you need to know to get started!</div>
           <Button variant="primary" onClick={handleGuidesClick} className="btn-custom">View Guides</Button>
         </div>
-        <img className="rounded-image" src="/images/penguin.png" />
+        <img className="rounded-image" src="/images/bunny.png" />
 
-        <img className="rounded-image" src="/images/penguin.png" />
+        <img className="rounded-image" src="/images/bunny.png" />
         <div className="text-container">
           <div class="grid-item"><h3><strong>SHARE A PATTERN</strong></h3></div>
           <div class="grid-item">Have a pattern that you'd love to share with the world? Send it our way, and after a short review we will post it!</div>

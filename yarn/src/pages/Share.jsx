@@ -1,5 +1,5 @@
 import { React, useState } from 'react'
-import { Button, Form } from 'react-bootstrap';
+import { Button, Form, Modal } from 'react-bootstrap';
 
 const Share = () => {
   const [type, setType] = useState('All');
@@ -10,6 +10,12 @@ const Share = () => {
   const [size, setSize] = useState('All');
   const [materials, setMaterials] = useState('');
   const [instructions, setInstructions] = useState('');
+
+  const [show, setShow] = useState(false);
+  const [submittedData, setSubmittedData] = useState(null);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,6 +30,8 @@ const Share = () => {
       instructions,
     };
     console.log(formData);
+    setSubmittedData(formData);
+    handleShow();
 
     setType('All');
     setDifficulty('All');
@@ -140,6 +148,31 @@ const Share = () => {
             Share
         </Button>
       </Form>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title><h2><b>Submission Confirmation</b></h2></Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <h4>Submission Details</h4>
+          <div className="custom-font">
+            <p><b>Type:</b> {submittedData.type}</p>
+            <p><b>Difficulty:</b> {submittedData.difficulty}</p>
+            <p><b>Sewing Level:</b> {submittedData.sewing}</p>
+            <p><b>Length:</b> {submittedData.length}</p>
+            <p><b>Yarn Type:</b> {submittedData.yarn}</p>
+            <p><b>Size:</b> {submittedData.size}</p>
+            <p><b>Materials:</b> {submittedData.materials}</p>
+            <p><b>Instructions:</b> {submittedData.instructions}</p>
+          </div>
+          <h4>Thank you for submitting a pattern!</h4>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose} className="btn-custom">
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
       
     </div>
   )
