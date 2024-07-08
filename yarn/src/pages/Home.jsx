@@ -29,13 +29,13 @@ const Home = () => {
         <div className="text-container">
           <div class="grid-item"><h3><strong>VIEW OUR PATTERNS</strong></h3></div>
           <div class="grid-item">Create your very own crochet plushy using one of our many custom patterns!</div>
-          <Button variant="primary" onClick={handlePatternsClick}>View Patterns</Button>
+          <Button variant="primary" onClick={handlePatternsClick} className="btn-custom">View Patterns</Button>
         </div>
 
         <div className="text-container">
           <div class="grid-item"><h3><strong>RECOMMENDED GUIDES</strong></h3></div>
           <div class="grid-item">Watch videos that we recommend to learn everything you need to know to get started!</div>
-          <Button variant="primary" onClick={handleGuidesClick}>View Guides</Button>
+          <Button variant="primary" onClick={handleGuidesClick} className="btn-custom">View Guides</Button>
         </div>
         <img className="rounded-image" src="/images/penguin.png" />
 
@@ -43,7 +43,7 @@ const Home = () => {
         <div className="text-container">
           <div class="grid-item"><h3><strong>SHARE A PATTERN</strong></h3></div>
           <div class="grid-item">Have a pattern that you'd love to share with the world? Send it our way, and after a short review we will post it!</div>
-          <Button variant="primary" onClick={handleShareClick}>Share Pattern</Button>
+          <Button variant="primary" onClick={handleShareClick} className="btn-custom">Share Pattern</Button>
         </div>
       </div>
     </div>

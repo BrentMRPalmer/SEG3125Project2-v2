@@ -4,14 +4,39 @@
 }
 
 .navbar-custom .navbar-brand,
- .navbar-custom .navbar-text,
- .navbar-custom .nav-link {
-     color: #764687;
- }
+.navbar-custom .navbar-text,
+.navbar-custom .nav-link {
+    color: #764687;
+}
 
- .navbar-custom .nav-link:hover {
-    color: black !important;
- }
+.navbar-custom .nav-link:hover {
+color: black !important;
+}
+
+.btn-custom {
+    background-color: #764687;
+    font-family: "Baloo 2";
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #542564;
+}
+
+.btn-custom2 {
+    background-color: rgba(255, 0, 0, 0);
+    font-family: "Baloo 2";
+    color: #764687;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom2:hover {
+    background-color: #542564;
+}
+  
 
 .patterns-container {
     display: grid;
@@ -101,6 +126,11 @@
 
 .custom-body-font {
     font-size: 1.5em;
+    color: #764687;
+    font-family: "Baloo 2";
+}
+
+.custom-font {
     color: #764687;
     font-family: "Baloo 2";
 }

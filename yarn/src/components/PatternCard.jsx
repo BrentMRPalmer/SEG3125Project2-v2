@@ -11,8 +11,8 @@ function PatternCard({id, title, type, difficulty, sewing, length, yarn, size, i
     return (
         <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={image} />
-        <Card.Body>
-            <Card.Title>{title}</Card.Title>
+        <Card.Body className="custom-font">
+            <Card.Title><b>{title}</b></Card.Title>
             <Card.Text>
             <b>Plushy Type:</b> {type} <br />
             <b>Difficulty:</b> {difficulty} <br />
@@ -21,7 +21,7 @@ function PatternCard({id, title, type, difficulty, sewing, length, yarn, size, i
             <b>Yarn:</b> {yarn} <br />
             <b>Size:</b> {size}
             </Card.Text>
-            <Button variant="primary" onClick={handleButtonClick}>View Pattern</Button>
+            <Button variant="primary" onClick={handleButtonClick} className="btn-custom">View Pattern</Button>
         </Card.Body>
         </Card>
     );

@@ -25,11 +25,11 @@ const Pattern = ({ patternData }) => {
 
     return (
         <div className="wrapper">
-            <Button variant="primary" onClick={handleButtonClick}>
+            <Button variant="primary" onClick={handleButtonClick} className="btn-custom2">
                 <img
                 src="/icons/arrow.png"
-                width="25"
-                height="25"
+                width="23"
+                height="23"
                 className="d-inline-block align-top"
                 alt="logo"
                 />
@@ -79,7 +79,7 @@ const Pattern = ({ patternData }) => {
                     <Form.Control type="text" value={newComment} onChange={(e) => setNewComment(e.target.value)}/>
                 </Form.Group>
 
-                <Button variant="primary" type="submit">
+                <Button variant="primary" type="submit" className="btn-custom">
                     Comment
                 </Button>
             </Form>

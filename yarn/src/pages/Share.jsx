@@ -24,7 +24,7 @@ const Share = () => {
       instructions,
     };
     console.log(formData);
-    
+
     setType('All');
     setDifficulty('All');
     setSewing('All');
@@ -136,7 +136,7 @@ const Share = () => {
             <Form.Control  as="textarea" rows={10} value={instructions} onChange={(e) => setInstructions(e.target.value)}/>
         </Form.Group>
 
-        <Button variant="primary" type="submit">
+        <Button variant="primary" type="submit" className="btn-custom">
             Share
         </Button>
       </Form>
