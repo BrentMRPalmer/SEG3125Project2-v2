@@ -23,6 +23,27 @@
     margin-bottom: 1em;
 }
 
+.filter-aes {
+    color: #764687;
+    font-family: "Baloo 2";
+    font-size: 1.2em;
+}
+
+.filter-group {
+    flex: 1 1 150px;
+    margin: 1em;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+.filter-group select {
+    width: 100%;
+    border-radius: 8px;
+}
+
 .sr-only {
     position: absolute;
     width: 1px;

@@ -22,7 +22,7 @@ function NavbarC() {
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/patterns">Patterns</Nav.Link>
             <Nav.Link as={Link} to="/guides">Guides</Nav.Link>
-            <Nav.Link as={Link} to="/community">Community</Nav.Link>
+            <Nav.Link as={Link} to="/share">Share</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

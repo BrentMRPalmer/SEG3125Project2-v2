@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import Patterns from './pages/Patterns';
 import Guides from './pages/Guides';
-import Community from './pages/Community';
+import Share from './pages/Share';
 import Pattern from './pages/Pattern'
 
 const patternData = [
@@ -124,7 +124,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/patterns" element={<Patterns patternData={patternData} />} />
         <Route path="/guides" element={<Guides />} />
-        <Route path="/community" element={<Community />} />
+        <Route path="/share" element={<Share />} />
         <Route path="/pattern/:id" element={<Pattern patternData={patternData} />} />
       </Routes>
     </Router>

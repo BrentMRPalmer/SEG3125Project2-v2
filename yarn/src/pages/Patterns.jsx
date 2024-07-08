@@ -25,11 +25,11 @@ const Patterns = ({ patternData }) => {
             <div>
                 <h1 class="centered-text"><b>Our Patterns</b></h1>
             </div>
-            <div className="filter-container padding">
-                <div>
-                    <label for="type">Plushy Type: </label>
+            <div className="filter-container filter-aes padding">
+                <div className="filter-group">
+                    <label for="type"><b>Plushy Type:</b></label>
                     {' '}
-                    <select className="margin-b" name="type" id="type" value={selectedType} onChange={(e) => setSelectedType(e.target.value)}>
+                    <select name="type" id="type" value={selectedType} onChange={(e) => setSelectedType(e.target.value)}>
                         <option value="All">All</option>
                         <option value="Animal">Animal</option>
                         <option value="Plant">Plant</option>
@@ -37,10 +37,10 @@ const Patterns = ({ patternData }) => {
                     </select>
                 </div>
 
-                <div>
-                    <label for="difficulty">Difficulty: </label>
+                <div className="filter-group">
+                    <label for="difficulty"><b>Difficulty:</b></label>
                     {' '}
-                    <select className="margin-b" name="difficulty" id="difficulty" value={selectedDifficulty} onChange={(e) => setSelectedDifficulty(e.target.value)}>
+                    <select name="difficulty" id="difficulty" value={selectedDifficulty} onChange={(e) => setSelectedDifficulty(e.target.value)}>
                         <option value="All">All</option>
                         <option value="Easy">Easy</option>
                         <option value="Medium">Medium</option>
@@ -48,10 +48,10 @@ const Patterns = ({ patternData }) => {
                     </select>
                 </div>
 
-                <div>
-                    <label for="sewing">Sewing Level: </label>
+                <div className="filter-group">
+                    <label for="sewing"><b>Sewing Level:</b></label>
                     {' '}
-                    <select className="margin-b" name="sewing" id="sewing" value={selectedSewing} onChange={(e) => setSelectedSewing(e.target.value)}>
+                    <select name="sewing" id="sewing" value={selectedSewing} onChange={(e) => setSelectedSewing(e.target.value)}>
                         <option value="All">All</option>
                         <option value="None">None</option>
                         <option value="Low">Low</option>
@@ -60,10 +60,10 @@ const Patterns = ({ patternData }) => {
                     </select>
                 </div>
 
-                <div>
-                    <label for="length">Length: </label>
+                <div className="filter-group">
+                    <label for="length"><b>Length:</b></label>
                     {' '}
-                    <select className="margin-b" name="length" id="length" value={selectedLength} onChange={(e) => setSelectedLength(e.target.value)}>
+                    <select name="length" id="length" value={selectedLength} onChange={(e) => setSelectedLength(e.target.value)}>
                         <option value="All">All</option>
                         <option value="1 hour">1 hour</option>
                         <option value="2 hours">2 hours</option>
@@ -73,10 +73,10 @@ const Patterns = ({ patternData }) => {
                     </select>
                 </div>
 
-                <div>
-                    <label for="yarn">Yarn Type: </label>
+                <div className="filter-group">
+                    <label for="yarn"><b>Yarn Type:</b></label>
                     {' '}
-                    <select className="margin-b" name="yarn" id="yarn" value={selectedYarn} onChange={(e) => setSelectedYarn(e.target.value)}>
+                    <select name="yarn" id="yarn" value={selectedYarn} onChange={(e) => setSelectedYarn(e.target.value)}>
                         <option value="All">All</option>
                         <option value="Superfine (1)">Superfine (1)</option>
                         <option value="Fine (2)">Fine (2)</option>
@@ -88,10 +88,10 @@ const Patterns = ({ patternData }) => {
                     </select>
                 </div>
 
-                <div>
-                    <label for="size">Size: </label>
+                <div className="filter-group">
+                    <label for="size"><b>Size:</b></label>
                     {' '}
-                    <select className="margin-b" name="size" id="size3" value={selectedSize} onChange={(e) => setSelectedSize(e.target.value)}>
+                    <select name="size" id="size3" value={selectedSize} onChange={(e) => setSelectedSize(e.target.value)}>
                         <option value="All">All</option>
                         <option value="Small">Small</option>
                         <option value="Medium">Medium</option>
