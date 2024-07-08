@@ -155,16 +155,18 @@ const Share = () => {
         </Modal.Header>
         <Modal.Body>
           <h4>Submission Details</h4>
-          <div className="custom-font">
-            <p><b>Type:</b> {submittedData.type}</p>
-            <p><b>Difficulty:</b> {submittedData.difficulty}</p>
-            <p><b>Sewing Level:</b> {submittedData.sewing}</p>
-            <p><b>Length:</b> {submittedData.length}</p>
-            <p><b>Yarn Type:</b> {submittedData.yarn}</p>
-            <p><b>Size:</b> {submittedData.size}</p>
-            <p><b>Materials:</b> {submittedData.materials}</p>
-            <p><b>Instructions:</b> {submittedData.instructions}</p>
-          </div>
+          {submittedData && (
+            <div className="custom-font">
+              <p><b>Type:</b> {submittedData.type}</p>
+              <p><b>Difficulty:</b> {submittedData.difficulty}</p>
+              <p><b>Sewing Level:</b> {submittedData.sewing}</p>
+              <p><b>Length:</b> {submittedData.length}</p>
+              <p><b>Yarn Type:</b> {submittedData.yarn}</p>
+              <p><b>Size:</b> {submittedData.size}</p>
+              <p><b>Materials:</b> {submittedData.materials}</p>
+              <p><b>Instructions:</b> {submittedData.instructions}</p>
+            </div>
+          )}
           <h4>Thank you for submitting a pattern!</h4>
         </Modal.Body>
         <Modal.Footer>
