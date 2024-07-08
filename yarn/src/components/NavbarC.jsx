@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function NavbarC() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary navbar-custom">
       <Container>
         <Navbar.Brand as={Link} to="/">
           <img
@@ -16,7 +16,7 @@ function NavbarC() {
             alt="logo"
           />
           {' '}
-          Yarn Repository</Navbar.Brand>
+          <b>Yarn Repository</b></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

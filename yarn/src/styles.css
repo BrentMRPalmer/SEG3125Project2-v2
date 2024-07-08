@@ -1,3 +1,18 @@
+.navbar-custom {
+    background-color: #F8DCFF !important;
+    font-family: "Baloo 2" !important;
+}
+
+.navbar-custom .navbar-brand,
+ .navbar-custom .navbar-text,
+ .navbar-custom .nav-link {
+     color: #764687;
+ }
+
+ .navbar-custom .nav-link:hover {
+    color: black !important;
+ }
+
 .patterns-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
