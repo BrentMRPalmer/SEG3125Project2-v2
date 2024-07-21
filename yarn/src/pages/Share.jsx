@@ -201,14 +201,39 @@ const Share = () => {
         <div className="padding">
           <h4 className="centered-text "><b>Enter Materials and Instructions</b></h4>
         </div>
+        
         <Form.Group className="mb-3" controlId="formBasicComment">
-            <Form.Label className="filter-aes"><b>Enter Materials</b></Form.Label>
-            <Form.Control as="textarea" rows={5} value={materials} onChange={(e) => setMaterials(e.target.value)}/>
+            <div style={{ display: 'flex', alignItems: 'center'}}>
+                <Form.Label className="filter-aes"><b>Enter Materials</b></Form.Label>
+                <OverlayTrigger placement="top" overlay={<Tooltip id="type-tooltip">Enter the list of materials (ex: safety eyes, stuffing) and tools (ex: stitch marker, hook size) necessary for the project, with each one on a new line</Tooltip>}>
+                    <span style={{ cursor: 'pointer', marginLeft: '0.5em', position: 'relative', top: '-7px' }}>
+                        <img
+                            src="/icons/info.png"
+                            width="20"
+                            height="20"
+                            alt="logo"
+                        />
+                    </span>
+                </OverlayTrigger>
+            </div>
+            <Form.Control required as="textarea" rows={5} value={materials} onChange={(e) => setMaterials(e.target.value)}/>
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicComment">
-            <Form.Label className="filter-aes"><b>Enter Instructions</b></Form.Label>
-            <Form.Control  as="textarea" rows={10} value={instructions} onChange={(e) => setInstructions(e.target.value)}/>
+        <Form.Group className="mb-3" controlId="formBasicComment">  
+            <div style={{ display: 'flex', alignItems: 'center'}}>
+                <Form.Label className="filter-aes"><b>Enter Instructions</b></Form.Label>
+                <OverlayTrigger placement="top" overlay={<Tooltip id="type-tooltip">Enter the instructions for the pattern with one on each line</Tooltip>}>
+                    <span style={{ cursor: 'pointer', marginLeft: '0.5em', position: 'relative', top: '-7px' }}>
+                        <img
+                            src="/icons/info.png"
+                            width="20"
+                            height="20"
+                            alt="logo"
+                        />
+                    </span>
+                </OverlayTrigger>
+            </div>
+            <Form.Control required as="textarea" rows={10} value={instructions} onChange={(e) => setInstructions(e.target.value)}/>
         </Form.Group>
 
         <Button variant="primary" type="submit" className="btn-custom">

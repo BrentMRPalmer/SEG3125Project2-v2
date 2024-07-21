@@ -73,7 +73,7 @@ const Pattern = ({ patternData }) => {
             <Form onSubmit={handleCommentSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicComment">
                     <Form.Label className="custom-body-font">Add a comment</Form.Label>
-                    <Form.Control type="text" value={newComment} onChange={(e) => setNewComment(e.target.value)}/>
+                    <Form.Control required type="text" value={newComment} onChange={(e) => setNewComment(e.target.value)}/>
                 </Form.Group>
 
                 <Button variant="primary" type="submit" className="btn-custom">
