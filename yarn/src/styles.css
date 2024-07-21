@@ -191,4 +191,21 @@ img {
     display: flex;
     align-items: center;
     gap: 10px;
-  }
+}
+
+.custom-list-group-item {
+    font-size: 1.5em;
+    color: #764687;
+    font-family: "Baloo 2";
+    background-color: #f8f9fa;
+}
+
+.custom-list-group-item:hover {
+    background-color: #e2e6ea;
+}
+
+.custom-list-group-item.active {
+    color: #fff;
+    background-color: #764687;
+    border-color: #764687;
+}

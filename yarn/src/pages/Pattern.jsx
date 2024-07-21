@@ -1,6 +1,7 @@
 import {React, useState} from 'react'
 import { useParams, useNavigate } from 'react-router-dom';
 import { Button, Form } from 'react-bootstrap';
+import ListGroup from '../components/ListGroup';
 import '../styles.css';
 
 const Pattern = ({ patternData }) => {
@@ -57,14 +58,10 @@ const Pattern = ({ patternData }) => {
                     ))}
                 </ul>
             </div>
-            <h1 className="centered-text"><b>Instructions</b></h1>
-            <div className="custom-body-font padding">
-                {pattern.instructions.map( (instruction, index) => (
-                    <p key={index} dangerouslySetInnerHTML={{ __html: instruction }}></p>
-                ))}
-            </div>
+            <h1 className="centered-text" style={{ marginBottom: '1.2em' }}><b>Instructions</b></h1>
+            <ListGroup items={pattern.instructions}></ListGroup>
 
-            <div>
+            <div style={{ marginTop: '2em' }}>
                 <h1 className="centered-text"><b>Comments</b></h1>
                 <ul className="custom-body-font">
                     {comments.map( (comment, index) => (
