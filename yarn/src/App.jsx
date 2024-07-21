@@ -195,7 +195,7 @@ const patternData = [
   {
     id: 5,
     title: "Tulip Pillow",
-    type: "Object",
+    type: "Plant",
     difficulty: "Easy",
     sewing: "None",
     length: "4 hours",
