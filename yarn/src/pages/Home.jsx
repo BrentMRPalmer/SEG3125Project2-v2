@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     <div className="wrapper">
-      <h1 className="centered-text"><b>WELCOME TO YARN REPOSITORYY</b></h1>
+      <h1 className="centered-text"><b>WELCOME TO YARN REPOSITORYYY</b></h1>
       <h2 className="centered-text margin-b"> Home to all things cute and fluffy! </h2>
       <div className="grid-container">
         <img className="rounded-image" src="/images/bunny.png" />
