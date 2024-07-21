@@ -1,5 +1,6 @@
 import { React, useState } from 'react'
 import { Button, Form, Modal } from 'react-bootstrap';
+import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 const Share = () => {
   const [type, setType] = useState('All');
@@ -57,8 +58,19 @@ const Share = () => {
         </div>
         <div className="filter-container filter-aes">
           <div className="filter-group">
-              <label for="type"><b>Plushy Type:</b></label>
-              {' '}
+              <div style={{ display: 'flex', alignItems: 'center'}}>
+                  <label htmlFor="type" style={{ marginRight: '0.5em' }}><b>Plushy Type</b></label>
+                  <OverlayTrigger placement="top" overlay={<Tooltip id="type-tooltip">Plushy Type refers to the category of the plushy</Tooltip>}>
+                      <span style={{ cursor: 'pointer', position: 'relative', top: '-3px' }}>
+                          <img
+                              src="/icons/info.png"
+                              width="20"
+                              height="20"
+                              alt="logo"
+                          />
+                      </span>
+                  </OverlayTrigger>
+              </div>
               <select name="type" id="type" value={type} onChange={(e) => setType(e.target.value)}>
                   <option value="All">All</option>
                   <option value="Animal">Animal</option>
@@ -68,8 +80,19 @@ const Share = () => {
           </div>
 
           <div className="filter-group">
-              <label for="difficulty"><b>Difficulty:</b></label>
-              {' '}
+              <div style={{ display: 'flex', alignItems: 'center'}}>
+                  <label htmlFor="difficulty" style={{ marginRight: '0.5em' }}><b>Difficulty</b></label>
+                  <OverlayTrigger placement="top" overlay={<Tooltip id="type-tooltip">Difficulty indicates how challenging the pattern is to complete</Tooltip>}>
+                      <span style={{ cursor: 'pointer', position: 'relative', top: '-3px' }}>
+                          <img
+                              src="/icons/info.png"
+                              width="20"
+                              height="20"
+                              alt="logo"
+                          />
+                      </span>
+                  </OverlayTrigger>
+              </div>
               <select name="difficulty" id="difficulty" value={difficulty} onChange={(e) => setDifficulty(e.target.value)}>
                   <option value="All">All</option>
                   <option value="Easy">Easy</option>
@@ -79,8 +102,19 @@ const Share = () => {
           </div>
 
           <div className="filter-group">
-              <label for="sewing"><b>Sewing Level:</b></label>
-              {' '}
+              <div style={{ display: 'flex', alignItems: 'center'}}>
+                  <label htmlFor="sewing" style={{ marginRight: '0.5em' }}><b>Sewing Level</b></label>
+                  <OverlayTrigger placement="top" overlay={<Tooltip id="type-tooltip">Sewing Level indicates how much sewing is involved</Tooltip>}>
+                      <span style={{ cursor: 'pointer', position: 'relative', top: '-3px' }}>
+                          <img
+                              src="/icons/info.png"
+                              width="20"
+                              height="20"
+                              alt="logo"
+                          />
+                      </span>
+                  </OverlayTrigger>
+              </div>
               <select name="sewing" id="sewing"  value={sewing} onChange={(e) => setSewing(e.target.value)}>
                   <option value="All">All</option>
                   <option value="None">None</option>
@@ -91,8 +125,19 @@ const Share = () => {
           </div>
 
           <div className="filter-group">
-              <label for="length"><b>Length:</b></label>
-              {' '}
+              <div style={{ display: 'flex', alignItems: 'center'}}>
+                  <label htmlFor="length" style={{ marginRight: '0.5em' }}><b>Length</b></label>
+                  <OverlayTrigger placement="top" overlay={<Tooltip id="type-tooltip">Length indicates approximately how long in hours it should take</Tooltip>}>
+                      <span style={{ cursor: 'pointer', position: 'relative', top: '-3px' }}>
+                          <img
+                              src="/icons/info.png"
+                              width="20"
+                              height="20"
+                              alt="logo"
+                          />
+                      </span>
+                  </OverlayTrigger>
+              </div>
               <select name="length" id="length" value={length} onChange={(e) => setLength(e.target.value)}>
                   <option value="All">All</option>
                   <option value="1 hour">1 hour</option>
@@ -104,8 +149,19 @@ const Share = () => {
           </div>
 
           <div className="filter-group">
-              <label for="yarn"><b>Yarn Type:</b></label>
-              {' '}
+              <div style={{ display: 'flex', alignItems: 'center'}}>
+                  <label htmlFor="yarn" style={{ marginRight: '0.5em' }}><b>Yarn</b></label>
+                  <OverlayTrigger placement="top" overlay={<Tooltip id="type-tooltip">Yarn indicates the weight (thickness) of the yarn</Tooltip>}>
+                      <span style={{ cursor: 'pointer', position: 'relative', top: '-3px' }}>
+                          <img
+                              src="/icons/info.png"
+                              width="20"
+                              height="20"
+                              alt="logo"
+                          />
+                      </span>
+                  </OverlayTrigger>
+              </div>
               <select name="yarn" id="yarn" value={yarn} onChange={(e) => setYarn(e.target.value)}>
                   <option value="All">All</option>
                   <option value="Superfine (1)">Superfine (1)</option>
@@ -119,8 +175,19 @@ const Share = () => {
           </div>
 
           <div className="filter-group">
-              <label for="size"><b>Size:</b></label>
-              {' '}
+              <div style={{ display: 'flex', alignItems: 'center'}}>
+                  <label htmlFor="size" style={{ marginRight: '0.5em' }}><b>Size</b></label>
+                  <OverlayTrigger placement="top" overlay={<Tooltip id="type-tooltip">Size indicates how big the finished product is</Tooltip>}>
+                      <span style={{ cursor: 'pointer', position: 'relative', top: '-3px' }}>
+                          <img
+                              src="/icons/info.png"
+                              width="20"
+                              height="20"
+                              alt="logo"
+                          />
+                      </span>
+                  </OverlayTrigger>
+              </div>
               <select name="size" id="size3" value={size} onChange={(e) => setSize(e.target.value)}>
                   <option value="All">All</option>
                   <option value="Small">Small</option>
