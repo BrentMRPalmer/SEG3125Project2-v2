@@ -1,0 +1,21 @@
+{
+    "navbar": {
+        "patterns": "Patterns",
+        "guides": "Guides",
+        "share": "Share"
+    },
+    "homePage": {
+        "welcome": "Welcome to Yarn Repository",
+        "tagline": "Home to all things cute and fluffy!",
+        "header1": "VIEW OUR PATTERNS",
+        "text1": "Create your very own crochet plushy using one of our many custom patterns!",
+        "btn1": "View Patterns",
+        "header2": "RECOMMENDED GUIDES",
+        "text2": "Watch videos that we recommend to learn everything you need to know to get started!",
+        "btn2": "View Guides",
+        "header3": "SHARE A PATTERN",
+        "text3": "Have a pattern that you'd love to share with the world? Send it our way, and after a short review we will post it!",
+        "btn3": "Share Pattern"
+    }
+}
+  

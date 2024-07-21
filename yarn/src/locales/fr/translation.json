@@ -1,0 +1,20 @@
+{
+    "navbar": {
+        "patterns": "Patrons",
+        "guides": "Guides",
+        "share": "Partager"
+    },
+    "homePage": {
+        "welcome": "Bienvenue au Yarn Repository",
+        "tagline": "La maison de toutes choses mignonnes et moelleuses!",
+        "header1": "VOIR NOS PATRONS",
+        "text1": "Créez votre propre peluche au crochet en utilisant l'un de nos nombreux patrons personnalisés!",
+        "btn1": "Voir les Patrons",
+        "header2": "GUIDES RECOMMANDÉS",
+        "text2": "Regardez des vidéos que nous recommandons pour apprendre tout ce que vous devez savoir pour commencer!",
+        "btn2": "Voir les Guides",
+        "header3": "PARTAGER UN PATRON",
+        "text3": "Vous avez un patron que vous aimeriez partager avec le monde? Envoyez-le nous, et après une courte révision, nous le publierons!",
+        "btn3": "Partager un Patron"
+    }
+}

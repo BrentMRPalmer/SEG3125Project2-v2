@@ -36,6 +36,19 @@ color: black !important;
 .btn-custom2:hover {
     background-color: #542564;
 }
+
+.btn-custom3 {
+    background-color: #764687;
+    font-family: "Baloo 2";
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.btn-custom3:hover {
+    background-color: #542564;
+}
   
 
 .patterns-container {
@@ -174,3 +187,8 @@ img {
     height: auto;
 }
 
+.space-between {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
