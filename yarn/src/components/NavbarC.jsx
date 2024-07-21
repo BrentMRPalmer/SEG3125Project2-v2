@@ -27,6 +27,7 @@ function NavbarC() {
             <Nav.Link as={Link} to="/patterns">{t('navbar.patterns')}</Nav.Link>
             <Nav.Link as={Link} to="/guides">{t('navbar.guides')}</Nav.Link>
             <Nav.Link as={Link} to="/share">{t('navbar.share')}</Nav.Link>
+            <Nav.Link as={Link} to="/FAQ">{t('navbar.faq')}</Nav.Link>
           </Nav>
           <LanguageSwitcher />
         </Navbar.Collapse>

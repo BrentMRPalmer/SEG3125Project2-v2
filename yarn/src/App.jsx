@@ -6,6 +6,7 @@ import Patterns from './pages/Patterns';
 import Guides from './pages/Guides';
 import Share from './pages/Share';
 import Pattern from './pages/Pattern'
+import FAQ from './pages/FAQ';
 
 const patternData = [
   {
@@ -281,6 +282,7 @@ function App() {
         <Route path="/guides" element={<Guides />} />
         <Route path="/share" element={<Share />} />
         <Route path="/pattern/:id" element={<Pattern patternData={patternData} />} />
+        <Route path="/FAQ" element={<FAQ />} />
       </Routes>
     </Router>
   );

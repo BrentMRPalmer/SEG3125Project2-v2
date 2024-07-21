@@ -47,7 +47,7 @@ const Share = () => {
   return (
     <div className="wrapper">
       <Form onSubmit={handleSubmit}>
-        <div className="padding">
+        <div>
           <h1 className="centered-text"><b>Share a Design</b></h1>
           <h4 className="centered-text">We will review your wonderful creation and post it!</h4>
         </div>

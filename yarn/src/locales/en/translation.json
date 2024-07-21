@@ -2,7 +2,8 @@
     "navbar": {
         "patterns": "Patterns",
         "guides": "Guides",
-        "share": "Share"
+        "share": "Share",
+        "faq": "FAQ"
     },
     "homePage": {
         "welcome": "Welcome to Yarn Repository",

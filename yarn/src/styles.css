@@ -209,3 +209,24 @@ img {
     background-color: #764687;
     border-color: #764687;
 }
+
+.custom-accordion-item {
+    color: #764687;
+    font-family: "Baloo 2";
+    background-color: #f8f9fa;
+}
+
+.custom-accordion-item .accordion-header .accordion-button {
+    color: #764687;
+    background-color: #f8f9fa;
+}
+
+.custom-accordion-item .accordion-header .accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #764687;
+    border-color: #764687;
+}
+
+.custom-accordion-item .accordion-button:focus {
+    box-shadow: none;
+}
