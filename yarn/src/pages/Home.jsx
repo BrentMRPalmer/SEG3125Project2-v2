@@ -39,9 +39,9 @@ const Home = () => {
           <div class="grid-item">{t('homePage.text2')}</div>
           <Button variant="primary" onClick={handleGuidesClick} className="btn-custom">{t('homePage.btn2')}</Button>
         </div>
-        <img className="rounded-image" src="/images/bunny.png" />
+        <img className="rounded-image" src="/images/owl.png" />
 
-        <img className="rounded-image" src="/images/bunny.png" />
+        <img className="rounded-image" src="/images/cow.png" />
         <div className="text-container">
           <div class="grid-item"><h3><strong>{t('homePage.header3')}</strong></h3></div>
           <div class="grid-item">{t('homePage.text3')}</div>
