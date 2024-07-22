@@ -3,12 +3,12 @@ import { Button, Form, Modal } from 'react-bootstrap';
 import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 const Share = () => {
-  const [type, setType] = useState('All');
-  const [difficulty, setDifficulty] = useState('All');
-  const [sewing, setSewing] = useState('All');
-  const [length, setLength] = useState('All');
-  const [yarn, setYarn] = useState('All');
-  const [size, setSize] = useState('All');
+  const [type, setType] = useState('Select');
+  const [difficulty, setDifficulty] = useState('Select');
+  const [sewing, setSewing] = useState('Select');
+  const [length, setLength] = useState('Select');
+  const [yarn, setYarn] = useState('Select');
+  const [size, setSize] = useState('Select');
   const [materials, setMaterials] = useState('');
   const [instructions, setInstructions] = useState('');
 
@@ -34,12 +34,12 @@ const Share = () => {
     setSubmittedData(formData);
     handleShow();
 
-    setType('All');
-    setDifficulty('All');
-    setSewing('All');
-    setLength('All');
-    setYarn('All');
-    setSize('All');
+    setType('Select');
+    setDifficulty('Select');
+    setSewing('Select');
+    setLength('Select');
+    setYarn('Select');
+    setSize('Select');
     setMaterials('');
     setInstructions('');
   }
@@ -72,7 +72,7 @@ const Share = () => {
                   </OverlayTrigger>
               </div>
               <select name="type" id="type" value={type} onChange={(e) => setType(e.target.value)}>
-                  <option value="All">All</option>
+                  <option value="Select">Select Type</option>
                   <option value="Animal">Animal</option>
                   <option value="Plant">Plant</option>
                   <option value="Object">Object</option>
@@ -94,7 +94,7 @@ const Share = () => {
                   </OverlayTrigger>
               </div>
               <select name="difficulty" id="difficulty" value={difficulty} onChange={(e) => setDifficulty(e.target.value)}>
-                  <option value="All">All</option>
+                  <option value="Select">Select Difficulty</option>
                   <option value="Easy">Easy</option>
                   <option value="Medium">Medium</option>
                   <option value="Hard">Hard</option>
@@ -116,7 +116,7 @@ const Share = () => {
                   </OverlayTrigger>
               </div>
               <select name="sewing" id="sewing"  value={sewing} onChange={(e) => setSewing(e.target.value)}>
-                  <option value="All">All</option>
+                  <option value="Select">Select Sewing</option>
                   <option value="None">None</option>
                   <option value="Low">Low</option>
                   <option value="Medium">Medium</option>
@@ -139,7 +139,7 @@ const Share = () => {
                   </OverlayTrigger>
               </div>
               <select name="length" id="length" value={length} onChange={(e) => setLength(e.target.value)}>
-                  <option value="All">All</option>
+                  <option value="Select">Select Length</option>
                   <option value="1 hour">1 hour</option>
                   <option value="2 hours">2 hours</option>
                   <option value="3 hours">3 hours</option>
@@ -163,7 +163,7 @@ const Share = () => {
                   </OverlayTrigger>
               </div>
               <select name="yarn" id="yarn" value={yarn} onChange={(e) => setYarn(e.target.value)}>
-                  <option value="All">All</option>
+                  <option value="Select">Select Yarn</option>
                   <option value="Superfine (1)">Superfine (1)</option>
                   <option value="Fine (2)">Fine (2)</option>
                   <option value="Light (3)">Light (3)</option>
@@ -189,7 +189,7 @@ const Share = () => {
                   </OverlayTrigger>
               </div>
               <select name="size" id="size3" value={size} onChange={(e) => setSize(e.target.value)}>
-                  <option value="All">All</option>
+                  <option value="Select">Select Size</option>
                   <option value="Small">Small</option>
                   <option value="Medium">Medium</option>
                   <option value="Large">Large</option>
