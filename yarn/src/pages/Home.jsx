@@ -34,14 +34,14 @@ const Home = () => {
         </figure>
         <article className="text-container" aria-label="Information about patterns">
           <header class="grid-item"><h3><strong>{t('homePage.header1')}</strong></h3></header>
-          <p id="patternsText" class="grid-item">{t('homePage.text1')}</p>
-          <Button variant="primary" onClick={handlePatternsClick} className="btn-custom" aria-labelledby="patternsText">{t('homePage.btn1')}</Button>
+          <p class="grid-item">{t('homePage.text1')}</p>
+          <Button variant="primary" onClick={handlePatternsClick} className="btn-custom" aria-label="Button to navigate to patterns page">{t('homePage.btn1')}</Button>
         </article>
 
         <article className="text-container">
           <header class="grid-item"><h3><strong>{t('homePage.header2')}</strong></h3></header>
-          <p id="guidesText" class="grid-item">{t('homePage.text2')}</p>
-          <Button variant="primary" onClick={handleGuidesClick} className="btn-custom" aria-labelledby="guidesText">{t('homePage.btn2')}</Button>
+          <p class="grid-item">{t('homePage.text2')}</p>
+          <Button variant="primary" onClick={handleGuidesClick} className="btn-custom" aria-label="Button to navigate to video guides page">{t('homePage.btn2')}</Button>
         </article>
         <figure>
           <img className="rounded-image" src="/images/owl.png" alt="Hand holding small grey and white crocheted owl"/>
@@ -52,8 +52,8 @@ const Home = () => {
         </figure>
         <article className="text-container">
           <header class="grid-item"><h3><strong>{t('homePage.header3')}</strong></h3></header>
-          <p id="shareText" class="grid-item">{t('homePage.text3')}</p>
-          <Button variant="primary" onClick={handleShareClick} className="btn-custom" aria-labelledby="shareText">{t('homePage.btn3')}</Button>
+          <p class="grid-item">{t('homePage.text3')}</p>
+          <Button variant="primary" onClick={handleShareClick} className="btn-custom" aria-label="Button to navigate to page to design and share patterns">{t('homePage.btn3')}</Button>
         </article>
       </section>
     </main>

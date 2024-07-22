@@ -230,3 +230,9 @@ img {
 .custom-accordion-item .accordion-button:focus {
     box-shadow: none;
 }
+
+.no-patterns {
+    width: 100%;
+    text-align: center;
+    grid-column: 2;
+  }

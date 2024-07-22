@@ -167,20 +167,26 @@ const Patterns = ({ patternData }) => {
                 </div>
             </div>
             <div className="patterns-container">
-                {filteredPatterns.map((pattern, index) => (
-                    <PatternCard 
-                        key={index}
-                        id={pattern.id}
-                        title={pattern.title}
-                        type={pattern.type}
-                        difficulty={pattern.difficulty}
-                        sewing={pattern.sewing}
-                        length={pattern.length}
-                        yarn={pattern.yarn}
-                        size={pattern.size}
-                        image={pattern.image}
-                    />
-                ))}
+                {filteredPatterns.length > 0 ? (
+                    filteredPatterns.map((pattern, index) => (
+                        <PatternCard 
+                            key={index}
+                            id={pattern.id}
+                            title={pattern.title}
+                            type={pattern.type}
+                            difficulty={pattern.difficulty}
+                            sewing={pattern.sewing}
+                            length={pattern.length}
+                            yarn={pattern.yarn}
+                            size={pattern.size}
+                            image={pattern.image}
+                        />
+                    ))
+                ) : (
+                    <div className="no-patterns">
+                        <p className="custom-font"><strong>No patterns match your filters. Please adjust your filter selections.</strong></p>
+                    </div>
+                )}
             </div>
             {/* <ReactTooltip /> */}
         </div>
