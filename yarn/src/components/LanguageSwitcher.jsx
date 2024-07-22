@@ -12,18 +12,19 @@ const LanguageSwitcher = () => {
     };
 
     return (
-        <div className="space-between">
+        <container className="space-between" aria-label="Select language">
             <img
                 src="/icons/globe.png"
                 width="24"
                 height="24"
                 className="d-inline-block align-top"
-                alt="logo"
+                alt="globe"
+                aria-hidden="true"
             />
-            <button className="btn-custom3" onClick={changeLanguage}>
+            <button className="btn-custom3" onClick={changeLanguage} aria-label="Confirm language change">
                 {language === 'en' ? 'Français' : 'English'}
             </button>
-        </div>
+        </container>
     );
 }
 
