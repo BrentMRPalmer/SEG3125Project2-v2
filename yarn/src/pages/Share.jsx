@@ -204,7 +204,7 @@ const Share = () => {
         
         <Form.Group className="mb-3" controlId="formBasicComment">
             <div style={{ display: 'flex', alignItems: 'center'}}>
-                <Form.Label className="filter-aes"><b>Enter Materials</b></Form.Label>
+                <Form.Label className="filter-aes"><b>Enter Materials</b><span style={{ color: 'red' }}>*</span></Form.Label>
                 <OverlayTrigger placement="top" overlay={<Tooltip id="type-tooltip">Enter the list of materials (ex: safety eyes, stuffing) and tools (ex: stitch marker, hook size) necessary for the project, with each one on a new line</Tooltip>}>
                     <span style={{ cursor: 'pointer', marginLeft: '0.5em', position: 'relative', top: '-7px' }}>
                         <img
@@ -221,7 +221,7 @@ const Share = () => {
 
         <Form.Group className="mb-3" controlId="formBasicComment">  
             <div style={{ display: 'flex', alignItems: 'center'}}>
-                <Form.Label className="filter-aes"><b>Enter Instructions</b></Form.Label>
+                <Form.Label className="filter-aes"><b>Enter Instructions</b><span style={{ color: 'red' }}>*</span></Form.Label>
                 <OverlayTrigger placement="top" overlay={<Tooltip id="type-tooltip">Enter the instructions for the pattern with one on each line</Tooltip>}>
                     <span style={{ cursor: 'pointer', marginLeft: '0.5em', position: 'relative', top: '-7px' }}>
                         <img
